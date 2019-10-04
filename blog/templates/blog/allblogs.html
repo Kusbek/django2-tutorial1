@@ -62,9 +62,9 @@
             {%for blog in blogs.all%}
                 <div>
                     <a href = "#"><h4>{{blog.title}}</h4></a> 
-                    {{blog.pub_date}}
+                    {{blog.pub_date_pretty}}
                     <img class = "card-img-top img-fluid" src = "{{blog.image.url}}"/>
-                    <p>{{blog.body}}</p>
+                    <p>{{blog.summary}}</p>
                     <br/>
                 </div>
             {%endfor%} 
